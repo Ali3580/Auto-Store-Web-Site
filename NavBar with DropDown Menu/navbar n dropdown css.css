@@ -1,0 +1,146 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.menu-bar {
+   background: green;
+   text-align: center;
+}
+
+.menu-bar ul {
+   display: inline-flex;
+   list-style: none;
+   color: antiquewhite;
+}
+
+.menu-bar ul li {
+   width: 120px;
+   margin: 15px;
+   padding: 15px;
+}
+
+.menu-bar ul li a {
+   text-decoration: none;
+   color: antiquewhite;
+}
+
+.active,
+.menu-bar ul li:hover {
+   background: #2bab0d;
+   border-radius: 2px;
+}
+
+.menu-bar .fa-solid {
+   margin-right: 10px;
+}
+
+.sub-menu-1 {
+   display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+   display: block;
+   position: absolute;
+   background: green;
+   margin-top: 15px;
+   margin-left: -15px;
+   padding: 0px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+   /* padding: 25px; */
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+   width: 100%;
+   border-bottom: 1px dotted #fff;
+   border-radius: 0px;
+   text-align: left;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover {
+   background: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+   border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+   color: #b2ff00;
+}
+
+
+
+.fa-angle-right {
+   float: right;
+}
+
+
+.sub-menu-2 {
+   display: none;
+
+}
+
+
+.click-me:hover .sub-menu-2 {
+   display: block;
+   position: absolute;
+   background: green;
+   margin-left: 135px;
+   margin-top: -34px;
+
+   /* padding: 25px; */
+
+}
+
+.menu-bar ul li .sub-menu-1 ul {
+   width: 152px;
+
+
+}
+
+.menu-bar ul li .sub-menu-1 ul li {
+   width: 150px;
+   margin: 0;
+   padding: 15px;
+}
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 ul {
+   margin-left: 10px;
+}
+
+
+
+
+.menu-bar2 {
+   background: chocolate;
+   text-align: center;
+
+}
+
+.menu-bar2 ul {
+   display: inline-flex;
+   list-style: none;
+   color: white;
+}
+
+.menu-bar2 ul li{
+   text-decoration: none;
+   color: aqua;
+   width: 120px;
+   padding: 15px;
+   margin: 15px;
+
+}
+.menu-bar2 ul li a{
+   text-decoration: none;
+   color: aqua;
+
+}
