@@ -1,0 +1,492 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <title> Full project</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="common.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo arrange-left wid-25">
+                <h1><span>Auto </span><span>Store</span></h1>
+            </div>
+
+            <div class="search-product arrange-left wid-50">
+                <input type="text" placeholder="search for products" />
+                <button>
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="selected-product arrange-left wid-25">
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    LOGIN
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN FORM</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="/action_page.php" method="post">
+                                    <div class="container-login-form">
+                                        <p><b>Username</b></p>
+                                        <label for="uname"></label>
+                                        <input type="text1" placeholder="Enter Username" name="uname" required>
+                                        <p><b>Password</b></p>
+                                        <label for="psw"></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button class="login-form-btn" type="submit">Login</button>
+                                        <label class="remember-me">
+                                            <input  type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                        <span class="psw" style="float: revert;">Forgot <a href="#">password?</a></span>
+                                        <br>
+                                        <span class="psw">Don't have an account? <a href="#">SignUp!</a></span>
+                                    </div>
+                                </form>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <button class="common-btn"><span>
+                        <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                        0</span></button>
+                <button class="common-btn"><span>
+                        <i class="fa-solid fa-heart"></i>
+                        0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-banner-wrapper">
+
+        <div class="wrapper next-row">
+
+            <div class="banner-area category-list arrange-left wid-25">
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="#">Catergories</a>
+                        <span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Interior Modification</a></li>
+                            <li><a href="#">Exterior Modification</a></li>
+                            <li><a href="#">Engine Modification</a></li>
+                            <li><a href="#">Seat Poshsis</a></li>
+                            <li><a href="#">Alloy Rims</a></li>
+                           <div class="li-class">
+                            <li><a  href="#">Car Wash</a></li>
+                           </div> 
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="wid-75 arrange-left">
+
+                <div class="shop-menu">
+                    <ul class="left-menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="dropdown-head"><a href="#">Product Details <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="banner">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div id="mycarousel" class="carousel carousel slide carousel-fade"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="2000">
+                                            <img src="image18.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption ">
+                                                <h5>Picture 1</h5>
+                                                <p>Some representative placeholder content for the first slide.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="2000">
+                                            <img src="image19.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption ">
+                                                <h5>Picture 2</h5>
+                                                <p>Some representative placeholder content for the second slide.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="2000">
+                                            <img src="image20.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption ">
+                                                <h5>Picture 3</h5>
+                                                <p>Some representative placeholder content for the third slide.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#mycarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper next-row">
+            <div class="wid-25 arrange-left">
+                <div class="features-point">
+                    <span class="icon-text-wrap">
+                        <i class="fa-sharp fa-solid fa-check"></i>
+                        <span>Quality Product</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="wid-25 arrange-left">
+                <div class="features-point">
+                    <span class="icon-text-wrap">
+                        <i class="fa-sharp fa-solid fa-shipping-fast"></i>
+                        <span>Free Shipping</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="wid-25 arrange-left">
+                <div class="features-point">
+                    <span class="icon-text-wrap">
+                        <i class="fa-sharp fa-solid fa-exchange-alt"></i>
+                        <span>14 Days Return </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="wid-25 arrange-left">
+                <div class="features-point">
+                    <span class="icon-text-wrap">
+                        <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                        <span>24/7 Support</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper next-row">
+            <div class="wid-33 arrange-left">
+                <div class="category-item">
+                    <div class="category-img">
+                        <img src="./image3.jpg" />
+                    </div>
+                    <div class="category-type">
+                        <h5>Polish and Wax</h5>
+                    </div>
+                    <div class="product-count">
+                        107 Products
+                    </div>
+                </div>
+            </div>
+
+            <div class="wid-33 arrange-left">
+                <div class="category-item">
+                    <div class="category-img">
+                        <img src="./image4.jpg" />
+                    </div>
+                    <div class="category-type">
+                        <h5>Car's Accessories</h5>
+                    </div>
+                    <div class="product-count">
+                        75 Products
+                    </div>
+                </div>
+            </div>
+
+            <div class="wid-33 arrange-left ">
+                <div class="category-item">
+                    <div class="category-img">
+                        <img src="./image5.jpg" />
+                    </div>
+                    <div class="category-type">
+                        <h5>Car Parts</h5>
+                    </div>
+                    <div class="product-count">
+                        40 Products
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper next-row">
+            <div class="wid-50 arrange-left">
+                <div class="offer-banner">
+                    <div class="image01">
+                        <img src="./image6.jpg" alt="offer banner">
+                    </div>
+                    <div class="offer-text">
+                        <h5>25% off on all Orders</h5>
+                        <h4>Summers Collection</h4>
+                        <button>Shop now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wid-50 arrange-left">
+                <div class="offer-banner">
+                    <div class="image">
+                        <img src="./image7.jpg" alt="offer banner">
+                    </div>
+                    <div class="offer-text">
+                        <h5>50% off on Waxes</h5>
+                        <h4>Summers Collection</h4>
+                        <button>Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper next-row">
+            <div class="wid-25 arrange-left">
+                <div class="cart">
+                    <div class="img">
+                        <img src="./image8.jpg" alt="formula-1 wax">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Formula 1 Polish</h6>
+                        <div class="cart-price">
+                            <h6 class="current">Rs2000/-</h6>
+                            <h6 class="last">Rs2500/-</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-eye"></i>
+                            View Details
+                        </a>
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wid-25 arrange-left">
+                <div class="cart">
+                    <div class="img">
+                        <img src="./image9.jpg" alt="formula-1 wax">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">CRC Polish & WAX</h6>
+                        <div class="cart-price">
+                            <h6 class="current">Rs3000/-</h6>
+                            <h6 class="last">Rs4500/-</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-eye"></i>
+                            View Details
+                        </a>
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wid-25 arrange-left">
+                <div class="cart">
+                    <div class="img">
+                        <img src="./image10.jpg" alt="formula-1 wax">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Polish with Fiber Cloth</h6>
+                        <div class="cart-price">
+                            <h6 class="current">Rs5000/-</h6>
+                            <h6 class="last">Rs5500/-</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-eye"></i>
+                            View Details
+                        </a>
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wid-25 arrange-left">
+                <div class="cart">
+                    <div class="img">
+                        <img src="./image11.jpg" alt="formula-1 wax">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Super Bundle</h6>
+                        <div class="cart-price">
+                            <h6 class="current">Rs10000/-</h6>
+                            <h6 class="last">Rs12000/-</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-eye"></i>
+                            View Details
+                        </a>
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper next-row">
+            <div class="stay-updated">
+                <h1>Stay Updated</h1>
+                <p>Normal info text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, molestiae.</p>
+                <div class="updated-inputs">
+                    <input type="text" class="email-input" placeholder="Email Goes Here">
+                    <button class="email-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="vendor-list">
+            <img src="./image12.jpg" alt="vendor">
+            <img src="./image13.jpg" alt="vendor">
+            <img src="./image14.jpg" alt="vendor">
+            <img src="./image15.jpg" alt="vendor">
+            <img src="./image16.jpg" alt="vendor">
+        </div>
+
+        <div class="wrapper next-row">
+            <div class="footer">
+                <div class="wid-25 arrange-left margin-right-5">
+                    <div class="logo">
+                        <h1><span>Auto </span><span>Store</span></h1>
+                    </div>
+                    <p class="footer-desc">
+                        Thanks for visiting the website. If you have any queries feel free to contact on any of the
+                        details given below.
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="fa fa-map-marker-alt icon"></i>abc Street, 123 Office Number, Gulberg, Lahore
+                        </li>
+                        <li><i class="fa fa-envelope icon"></i>abc@email.com
+                        </li>
+                        <li><i class="fa fa-phone icon"></i>+92 042 12345678
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="wid-25 quick-links arrange-left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Home</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Our Shop</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Shop Details</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Live Offers</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Sale</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Contact Us</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="wid-25 quick-links arrange-left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Shipping Details</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Cart Info</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Edit Cart</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Live Chat</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>Portfolio</span></a></li>
+                        <li><a href=""><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="wid-25 arrange-left">
+                    <h3>News Letter</h3>
+                    <input type="text" class="footer-input" placeholder="Enter Name">
+                    <input type="text" class="footer-input" placeholder="Enter Email">
+                    <button class="footer-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            <h3>All Copy Rights are reserved. Designed by <b>Muhammad Ali Umar.</b></h3>
+            <img src="./image17.jpg" alt="payment-icons">
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
