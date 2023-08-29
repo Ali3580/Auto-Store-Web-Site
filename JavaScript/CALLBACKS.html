@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALLBACKS</title>
+</head>
+<body>
+    
+<script>
+
+    // console.log("START");
+    // setTimeout(() => {
+    //     console.log("I'm in TIMEOUT!")
+    // }, 5000);
+    // console.log("END");
+
+
+
+    function loadScript(src,callback) {
+
+        let script = document.createElement("script");
+        script.src = src;
+        script.onload = function () {
+            console.log("Loaded script with SRC: "+src);
+            callback();
+            
+        }
+        document.body.appendChild(script);
+        
+    }
+
+    function sl() {
+        alert("Script Loaded.");
+    };
+    
+
+    loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js",sl); 
+
+
+
+    
+    // // // SPLIT METHOD
+
+    // let friend = "Ali, "+"Danish, "+"Hamdan.";
+    // let a1 = friend.toLowerCase();
+    // let result = "";
+    // for (let index = 0; index < friend.length; index++) {
+    //     result += friend[index];
+    // }
+    // console.log(result);
+
+    // let split_str = a1.split("a");
+    // console.log(split_str);
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style01.css" rel="stylesheet" />
+    <title>Button ToggleHide + Other JavaScript Functions</title>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        The time is <span id="time"></span>
+    </div>
+
+
+
+
+    <div class="content">
+        <p id="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur natus qui quibusdam? Porro
+            repudiandae ea
+            necessitatibus, dignissimos provident molestias voluptatem rem consequuntur, sapiente quis earum? Ipsam
+            debitis asperiores quaerat eos ipsum est veniam incidunt laudantium enim, delectus obcaecati architecto
+            dolorum animi soluta hic quibusdam reiciendis aperiam iure tempore! Quaerat possimus vitae voluptate
+            necessitatibus tempore ad, voluptatibus consequuntur rerum quasi porro ea aliquam, ut nemo, nesciunt tenetur
+            facilis dolorum illo consectetur unde! Amet earum asperiores, provident aspernatur pariatur ratione quidem
+            reiciendis sapiente, commodi delectus voluptas saepe voluptates maxime modi dolorem eligendi nemo nam eum.
+            Recusandae, et. Consequatur suscipit aliquam cum cupiditate?</p>
+    </div>
+
+
+    <button class="show-hide-btn" id="btn" onclick="toggleHide()">Show/Hide</button>
+
+
+
+
+    <script>
+
+        // let para = document.getElementById('Para');
+        // let btn = document.getElementById('btn');
+
+        // para.addEventListener('mouseover', function () {
+
+        //     console.log('Mouse Inside Para!');
+
+        // })
+        // para.addEventListener('mouseout', function () {
+
+        //     console.log('Mouse Outside Para!');
+
+        // })
+
+
+        // btn.addEventListener('mouseover', function () {
+
+        //     console.log('Mouse on Button!');
+
+        // })
+        // btn.addEventListener('mouseout', function () {
+
+        //     console.log('Mouse not on Button!');
+
+        // })
+
+        function toggleHide() {
+
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('Para');
+            if (para.style.display != 'none') {
+
+                para.style.display = 'none';
+
+            }
+            else {
+                para.style.display = 'block';
+            }
+
+
+
+        }
+
+
+        // //ARROW FUNCTIONS
+
+        //  let add = () =>{
+
+        //     let a = prompt('Enter Number A: ');
+        //     let b = prompt('Enter Number B: ');
+        //     let c = Number(a) + Number(b);
+        //     console.log('The SUM of '+a+' and '+b+' is '+c);
+        //  }
+
+        //  add();
+
+
+        // let greet = () => console.log('Good Morning');
+        
+        // let add = (a,b) => a+b;
+        // let half = a => a/2;    
+        // console.log(add(5,3));
+        // console.log(half(10));
+        // greet();
+
+        // // Object with Arrow Function and This keyword
+
+        // let object = {
+        //     names: ['Ali','Usman','Ahmad','Tayyab'],
+        //     question: ' Are you free?',
+        //     speak(){
+        //         this.names.forEach((a)=>{
+        //             console.log(a + this.question)
+        //         })
+        //     }
+        // }
+        // object.speak();
+
+        // // TIMEOUT COMMAND
+
+        // setTimeout(() => {
+        //     console.log('Timeout here!')
+        // }, 5000);
+
+        // // MATH Object
+
+        let x = prompt('Enter Number to Round: ');
+        let y = prompt('Enter Number to Round: ');
+        let m = prompt('Enter Number to SQRT: ');
+        let n = prompt('Enter Number to SQRT: ');
+        let o = prompt('Enter to calculate the power of the Value: ');
+        let p = prompt('Enter the power of the Value: ');
+        let f = p;    
+        let e = o;
+        let c = m;
+        let d = n;
+        let a = x;
+        let b = y;
+        console.log('The value entered by the user is ',x,'and',y,'respectively.');
+        console.log('The rounded value of',a,'and',b,' is', Math.round(x),'and', Math.round(y),'respectively.');
+
+        console.log('The value entered to calculate the SQRT is ',m,'and',n,'respectively.');
+        console.log('The SQRT of the value ',c,' and', d,' is', Math.sqrt(m),'and', Math.sqrt(n),'respectively.');
+
+     
+        console.log('The power of',e,' ^', f,' is', Math.pow(o,p));
+
+        let ceil = prompt('Enter to calculate ceil Value:');
+        let floor = prompt('Enter to calculate floor Value:');
+        let w = floor;
+        let z = ceil;
+
+
+        console.log('The ceil value of ',z,' is: ',Math.ceil(ceil));
+        console.log('The floor value of ',w,' is: ',Math.floor(floor));
+
+    
+        
+        
+
+        // console.log('The value of a and b is',x,'and',y,'respectively.')
+        // console.log('The rounded value of a and b is', Math.round(x),'and', Math.round(y),'respectively.')
+
+
+
+
+        // let dt = new Date();
+        // console.log(dt);
+
+        // let dt1 = new Date(year, month, date, hour, minutes, seconds, milliseconds);
+
+        // let dt1 = new Date(2025, 3, 4, 16, 25, 49, 34);
+        // console.log(dt1);
+
+        // let yr = dt.getFullYear();
+        // console.log("The Year is ", yr);
+
+        // let yr1 = dt.getDate();
+        // console.log("The Date is ", yr1);
+
+        // let yr2 = dt.getDay();
+        // console.log("The Day is ", yr2);
+
+        // let yr3 = dt.getHours();
+        // console.log("The Hour is ", yr3);
+
+        // let yr4 = dt.getMilliseconds();
+        // console.log("The Millisecond is ", yr4);
+
+        // let yr5 = dt.getMinutes();
+        // console.log("The Minute is ", yr5);
+
+        // let yr6 = dt.getMonth();
+        // console.log("The Month is ", yr6);
+
+        // let yr7 = dt.getSeconds();
+        // console.log("The Seconds is ", yr7);
+
+
+        // Timeout command
+
+        // function func() {
+        //     let name = userInput04;
+
+        //     let c = 'Take Care.';
+
+        //     console.log("Hello! " + name + " " + c);
+
+        // }
+        // let userInput04 = prompt("Enter Name: ");
+        // setTimeout(func, 1000);
+        // timeout = setTimeout(func, 1000);
+        // console.log(timeout);
+
+        // clearTimeout(timeout);
+        // setInterval(func, 2000);
+
+        function displaytime() {
+
+            time = new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+
+        setInterval(displaytime, 1000);
+        // displaytime();
+
+
+
+
+
+
+
+
+
+
+
+
+        // let string = "Lahore";
+        // let time = "IT Tower";
+        // let team = "Lorem";
+        // let temp = `${string} is the capital of Punjab and ${time} was the tallest corporate building of ${string}.`
+
+        // let len = time.length;
+        // console.log(string + " " + time + " " + team);
+        // console.log(temp);
+        // console.log(`The length of time is ${len}`);
+
+        // let str = "This is a string."
+        // let replaced = str.replace('string', 'array')
+        // let replaced1 = str.replace('string', 'index')
+        // console.log(str)
+        // console.log(replaced)
+        // console.log(replaced1)
+        // console.log(replaced.toLocaleUpperCase())
+        // console.log(replaced.toLocaleLowerCase())
+
+
+
+
+        // EVEN ODD
+
+        // let number = prompt("Enter a number: ")
+
+        // if (number % 2 == 0) {
+        //     console.log('The number is even.')
+
+
+        // }
+        // else {
+        //     console.log('The number is odd.')
+        // }
+
+
+        // VOWELS
+
+
+        // let alphabet = prompt("Enter Alphabet:")
+
+        // if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' ||
+        //     alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U') {
+        //     console.log('The alphabet is a vowel.')
+
+        // }
+        // else {
+        //     console.log('The alphabet is not a vowel.')
+        // }
+
+
+
+        // Second Program for Vowels
+
+
+
+        // function isVowel(char1) {
+
+        //         let lowerCasechar1 = char1.toLowerCase();
+
+
+        //         return ['a', 'e', 'i', 'o', 'u'].includes(lowerCasechar1);
+        //     }
+
+
+
+        // let userInput = prompt("Enter a letter:");
+        // if (userInput.length == 1) {
+        //     if (isVowel(userInput)) {
+        //         console.log(userInput + " is a vowel.");
+        //     } else {
+        //         console.log(userInput + " is not a vowel.");
+        //     }
+        // }
+        // else {
+        //     console.log("Please enter a single letter.");
+        // }
+
+
+        // Vowel Counter Program
+
+        // function vowel_count(alphabet) {
+        //     return alphabet.replace(/[^aeiouAEIOU]/g, "").length;
+        // }
+
+        // console.log('The no of vowels in the sentence are: ', vowel_count(alphabet))
+
+        // FUNCTIONS
+
+        // function greet(name) {
+        //     console.log(name + " " + "is good developer.");
+        // }
+
+
+        // let name = prompt("Enter Name:");
+
+        // greet(name);
+
+
+        // Maximum and Minimum Function
+
+        // function age(myage, legal_age) {
+
+
+        //     let result = myage >= legal_age;
+
+        //     console.log(`As my age is ${myage} and the legal age is ${legal_age} so the equation is ${result}`);
+
+        // }
+
+        // let userInput = prompt("Enter your age: ");
+        // let userInput0 = prompt("Enter Legal age: ");
+        // age(userInput, userInput0);
+
+
+
+
+
+
+
+
+        // Minimum and Maximum Functions
+
+        // function minimum(a, b) {
+
+        //     let x = Math.min(a, b);
+        //     console.log(`Minimum number between ${a} and ${b} is ${x}`);
+
+        // }
+
+        // function maximum() {
+
+        //     let a = userInput3;
+        //     let b = userInput4;
+
+        //     let x = Math.max(a, b);
+        //     console.log(`Maximum number between ${a} and ${b} is ${x}`);
+
+        // }
+        // // let userInput1 = prompt("Enter for Minimum Number:");
+        // // let userInput2 = prompt("Enter for Minimum Number:");
+        // let userInput3 = prompt("Enter for Maximum Number:");
+        // let userInput4 = prompt("Enter for Maximum Number:");
+        // // minimum(userInput1, userInput2);
+        // maximum(userInput3, userInput4);
+
+
+
+
+
+        // //LOOPS
+
+
+
+
+
+
+        // let friends = ["Ali", "Hamdan", "Danish", "Malik", "Omer", "Daniyal"];
+
+        // console.log("~'FOR OF' LOOP Starting~")
+        // //FOR OF LOOP!
+
+        // for (a of friends) {
+        //     console.log("Hey " + a + " Welcome to 'For of' Loop!");
+        // }
+
+        // console.log("~Next 'FOR EACH' Loop Starting~");
+
+        // // FOR EACH LOOP!
+
+        // friends.forEach(function f(element) {
+        //     console.log("Hey " + element + " Welcome to 'ForEach' Loop!");
+
+        // })
+
+        // let employee = {
+        //     name: "Ali",
+        //     age: 25,
+        //     team: "WEB DESIGNING",
+        //     greet: "Good Morning"
+        // }
+
+        // console.log("~Next 'FOR IN' LOOP Starting~");
+
+        // // FOR IN LOOP!
+        // for (key in employee) {
+        //     console.log(`The ${key} of employee is ${employee[key]}`);
+        // }
+
+
+        // console.log("~Next LOOP Starting~")
+
+        // function abc() {
+        //     let friends = ["Ali", "Hamdan", "Danish", "Malik", "Omer", "Daniyal"];
+
+
+        //     for (let index = 0; index < friends.length; index++) {
+        //         console.log("Hey " + friends[index] + "! How you Doing?");
+        //     }
+
+        // }
+
+        // console.log(abc());
+
+
+
+        // let employee = {
+        //     name: "Sir Ahmar",
+        //     age: 22,
+        //     Designation: "Full Stack Developer"
+        // }
+
+        // for (key in employee) {
+        //     console.log(`The ${key} of employee is ${employee[key]}`);
+        // }
+
+
+        // function sum_odd_numbers(friends) {
+        //     for (let index = 0; index < friends.length; index++) {
+        //         console.log("Hey " + friends[index] + "! How you Doing?");
+        //     }
+
+        // }
+
+        // let friends = ["Ali", "Hamdan", "Danish", "Malik", "Omer", "Daniyal"];
+
+        // console.log(sum_odd_numbers(friends));
+
+
+        // let i = 0;
+        // while (i<4) {
+        //     console.log(`${i} is less than 4`);
+        //     i++;
+        // }
+
+        // // Function to sum array
+        // function totalGoals(array) {
+            //   console.log(array);
+
+            // for (let i = 0; i < array.length; i++) {
+                // What code should go here to add up the elements into a total?
+                // console.log(array[i])
+            // }
+        // }
+
+        // //Declare array
+        // let array = [0, 1, 2];
+
+        // // Use function
+        // console.log(totalGoals(array));
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
