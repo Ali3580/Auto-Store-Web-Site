@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Using Before-After</title>
+</head>
+<style>
+    .first {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: limegreen;
+      margin-bottom: 10px;
+      padding: 25px;
+      box-sizing: border-box;
+    }
+
+    
+    .first::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 75px;
+    }
+    
+    .first::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 75px;
+    }
+</style>
+<body>
+    <div class="first" id="rectangle"></div>
+
+</body>
+</html>
